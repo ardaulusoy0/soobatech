@@ -1,11 +1,15 @@
 import type { Metadata } from "next";
+
 import { Poppins, Geist } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import SmoothScroll from "@/components/SmoothScroll";
 import { cn } from "@/lib/utils";
+import Footer from "@/components/Footer";
+import QuoteModal from "@/components/Modal";
+import { ModalProvider } from '@/context/ModalContext';
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
 
 const font = Poppins({
   subsets: ["latin"],
@@ -31,13 +35,15 @@ export default function RootLayout({
     >
 
       <body suppressHydrationWarning className={`${font.className} flex flex-col`}>
-        <Navbar />
-        <main className="">
-          <SmoothScroll>
-            {children}
-
-          </SmoothScroll>
-        </main>
+        <ModalProvider>
+          <Navbar />
+          <main>
+            <SmoothScroll>
+              {children}
+            </SmoothScroll>
+          </main>
+          <Footer />
+        </ModalProvider>
       </body>
     </html>
   );

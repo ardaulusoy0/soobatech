@@ -55,7 +55,7 @@ const ServicesPage = () => {
     <div className='flex flex-col w-full  pt-32 pb-24'>
       <AnimateOnScroll>
         <div className="px-6 md:px-32 max-w-7xl mx-auto mb-24">
-          <h1 className="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter mb-8 leading-none">
+          <h1 className="text-4xl sm:text-6xl md:text-8xl font-black text-slate-900 tracking-tighter mb-8 leading-none text-center md:text-left">
             Neler <span className="text-blue-600">Sunuyoruz?</span>
           </h1>
           <p className="text-slate-500 text-xl max-w-3xl text-center">

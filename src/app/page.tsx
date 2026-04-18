@@ -1,8 +1,10 @@
 "use client";
 import React from 'react';
 import Image from 'next/image';
-import { MoveRight, CheckCircle2, Users, Briefcase, Trophy, Lightbulb, Code2, Palette, Globe, BarChart3, PencilRuler, Megaphone } from 'lucide-react';
+import { Logo } from '@/components/brand/logo';
+import { MoveRight, CheckCircle2, Users, Briefcase, Rocket, Smartphone, Trophy, Lightbulb, Code2, Palette, Globe, BarChart3, PencilRuler, Megaphone } from 'lucide-react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
+import FeaturesSection from '@/components/Features';
 
 const Page = () => {
   return (
@@ -27,7 +29,7 @@ const Page = () => {
             </div>
 
             <h1 className="text-6xl md:text-8xl text-slate-900 ">
-              <Image src="/soobanew.png" alt="SOOBA" width={200} height={50} className="inline-block" />
+              <Logo width={200} height={60} />
             </h1>
 
             <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-xl">
@@ -231,28 +233,7 @@ const Page = () => {
       </div>
 
       <AnimateOnScroll>
-        <section className="py-24 max-w-7xl px-8 w-full mx-auto z-10">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div className="relative group">
-              <div className="bg-blue-600 w-full h-full rounded-[3rem] rotate-3 absolute inset-0 -z-10 opacity-10" />
-              <div className="relative overflow-hidden rounded-[3rem] shadow-2xl bg-slate-100 h-125">
-                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80" alt="Ekip" className="w-full h-full object-cover" />
-              </div>
-            </div>
-            <div className="space-y-8">
-              <h2 className="text-4xl md:text-5xl font-black text-slate-900 leading-tight">İşinizi Büyütmek İçin <span className="text-blue-600">Doğru Yerdesiniz.</span></h2>
-              <p className="text-slate-600 text-lg leading-relaxed">Modern teknolojileri kreatif fikirlerle birleştiriyoruz.</p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {["Stratejik Dijital Planlama", "Veri Odaklı Büyüme", "Yüksek Dönüşüm Oranları", "Sürekli Optimizasyon"].map((text, i) => (
-                  <div key={i} className="flex items-center gap-3 text-slate-800 font-bold bg-white p-4 rounded-2xl border border-slate-100 shadow-sm">
-                    <CheckCircle2 className="text-blue-600 w-5 h-5" />
-                    <span className="text-sm">{text}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+        <FeaturesSection />
       </AnimateOnScroll>
 
       <AnimateOnScroll>
@@ -265,58 +246,13 @@ const Page = () => {
             <h2 className="text-4xl md:text-6xl font-black text-white mb-10 relative z-20 tracking-tighter">Dijitaldeki başarınızı şansa bırakmayın.</h2>
             <button className="group bg-white text-blue-600 px-14 py-6 rounded-2xl font-black text-xl hover:bg-slate-900 hover:text-white transition-all relative z-20 flex items-center gap-3 mx-auto">
               Hadi Konuşalım
-              <MoveRight className="w-6 h-6 group-hover:translate-x-2 transition-transform" />
+              <MoveRight className="w-6 h-6 max-sm:hidden group-hover:translate-x-2 transition-transform" />
             </button>
           </div>
         </div>
       </AnimateOnScroll>
 
-      <footer className="w-full bg-white border-t border-slate-100 pt-20 pb-10 relative overflow-hidden z-20">
-        <div
-          className="absolute inset-0 z-0 opacity-[0.2] pointer-events-none"
-          style={{ backgroundImage: `radial-gradient(#cbd5e1 1px, transparent 1px)`, backgroundSize: '25px 25px' }}
-        />
-        <div className="max-w-7xl mx-auto px-6 md:px-16 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-            <div className="space-y-6">
-              <span className="text-2xl font-black tracking-tighter text-slate-900">SOO<span className="text-blue-600">BA</span></span>
-              <p className="text-slate-500 text-sm leading-relaxed">
-                İşinizi dijital dünyada büyütmek için yenilikçi çözümler sunan yaratıcı bir ajansız.
-              </p>
-            </div>
-            <div className="space-y-6">
-              <h4 className="font-bold text-slate-900 uppercase text-xs">Kurumsal</h4>
-              <ul className="space-y-4 text-slate-500 text-sm">
-                <li>Hakkımızda</li>
-                <li>Hizmetler</li>
-                <li>İletişim</li>
-              </ul>
-            </div>
-            <div className="space-y-6">
-              <h4 className="font-bold text-slate-900 uppercase text-xs">Hizmetler</h4>
-              <ul className="space-y-4 text-slate-500 text-sm">
-                <li>Web Geliştirme</li>
-                <li>Mobil Uygulama</li>
-                <li>SEO & Pazarlama</li>
-                <li>Grafik Tasarım</li>
-              </ul>
-            </div>
-            <div className="space-y-6">
-              <div className="space-y-6">
-                <h4 className="font-bold text-slate-900 uppercase text-xs">İletişim</h4>
-                <div className="space-y-3 text-sm text-slate-500">
-                  <p className="font-semibold text-slate-900">İstanbul, Türkiye</p>
-                  <p>info@sooba.com</p>
-                  <p>+90 555 000 00 00</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="pt-10 border-t border-slate-100 text-slate-400 text-xs text-center">
-            © 2026 SOOBA Tech. Tüm hakları saklıdır.
-          </div>
-        </div>
-      </footer>
+
 
     </div>
   );

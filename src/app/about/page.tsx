@@ -7,15 +7,11 @@ const AboutPage = () => {
     <div className='flex flex-col w-full bg-[#f8fafc] pt-32 pb-24'>
       <AnimateOnScroll>
         <section className='px-6 md:px-32 max-w-7xl mx-auto mb-32'>
-          <div className="max-w-4xl">
-            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 px-4 py-2 rounded-full mb-8">
-              <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
-              <span className="text-sm font-bold text-blue-600 tracking-wider">Biz Kimiz?</span>
-            </div>
+          <div className="max-w-4xl text-center">
             <h1 className="text-6xl md:text-8xl font-black text-slate-900 tracking-tighter mb-12">
               Geleceği <br /> <span className="text-blue-600">Tasarlıyoruz.</span>
             </h1>
-            <div className="space-y-8 text-slate-600 text-xl leading-relaxed font-medium">
+            <div className="space-y-8 text-center text-slate-600 text-xl leading-relaxed font-medium">
               <p>
                 SOOBA olarak markaların dijital dünyada sürdürülebilir bir başarı elde etmesi için teknoloji, tasarım ve stratejiyi bir araya getiriyoruz. Her projeye özel yaklaşımımızla, işinizi sadece büyütmekle kalmıyor, aynı zamanda geleceğe hazırlıyoruz.
               </p>
