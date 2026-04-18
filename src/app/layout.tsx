@@ -37,7 +37,7 @@ export default function RootLayout({
       <body suppressHydrationWarning className={`${font.className} flex flex-col`}>
         <ModalProvider>
           <Navbar />
-          <main>
+          <main className="overflow-x-hidden">
             <SmoothScroll>
               {children}
             </SmoothScroll>
