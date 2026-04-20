@@ -57,7 +57,7 @@ const Navbar = () => {
             <nav className={`fixed w-full top-0 z-100 transition-all duration-500 ${scrolled || isOpen ? 'bg-white/90 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-8'
                 }`}>
                 <div className="max-w-7xl mx-auto pl-6 justify-center flex items-center ">
-                    <Logo width={100} height={40} className="absolute hidden max-sm:visible left-0 mx-8 " />
+                    <Logo width={100} height={40} className="absolute md:hidden left-0 mx-8 " />
                     <div className="hidden md:flex items-center space-x-10">
                         {navLinks.map((link) => (
                             <Link key={link.name} href={link.href} className="text-sm font-bold text-slate-700 hover:text-blue-600 transition-colors">
