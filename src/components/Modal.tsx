@@ -54,7 +54,7 @@ const QuoteModal = ({ isOpen, onClose }: { isOpen: boolean, onClose: () => void 
                 </button>
 
                 <div className="mb-8">
-                    <h2 className="text-3xl font-black text-slate-900 tracking-tighter italic uppercase">
+                    <h2 className="text-3xl font-black text-slate-900 uppercase">
                         Teklif <span className="text-blue-600">Alın.</span>
                     </h2>
                     <p className="text-slate-500 text-sm font-bold mt-2">Hayalinizdeki projeyi birlikte hayata geçirelim.</p>

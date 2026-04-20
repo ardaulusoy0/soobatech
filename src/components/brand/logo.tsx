@@ -2,11 +2,12 @@ import Image from 'next/image';
 interface Props {
     width?: number;
     height?: number;
+    className?: string;
 }
 
 
 export const Logo = (props: Props) => {
     return (
-        <Image src="/soobanew.png" alt="SOOBA Tech Logo" width={props.width || 150} height={props.height || 50} className="mb-4" />
+        <Image src="/soobaLogoLast.png" alt="SOOBA Tech Logo" className={props.className || ""} width={props.width || 150} height={props.height || 50} />
     );
 };

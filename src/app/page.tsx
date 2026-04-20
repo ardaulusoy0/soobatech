@@ -5,6 +5,7 @@ import { Logo } from '@/components/brand/logo';
 import { MoveRight, CheckCircle2, Users, Briefcase, Rocket, Smartphone, Trophy, Lightbulb, Code2, Palette, Globe, BarChart3, PencilRuler, Megaphone } from 'lucide-react';
 import AnimateOnScroll from '@/components/AnimateOnScroll';
 import FeaturesSection from '@/components/Features';
+import Link from 'next/link';
 
 const Page = () => {
   return (
@@ -18,239 +19,239 @@ const Page = () => {
         }}
       />
 
-      <AnimateOnScroll>
-        <section className='grid grid-cols-1 lg:grid-cols-2 p-6 md:p-16 md:py-32 gap-12 min-h-screen items-center max-w-7xl mx-auto relative pt-24 z-10'>
-          <div className="absolute top-[-10%] right-[-10%] w-125 h-125 bg-blue-100 rounded-full blur-[120px] opacity-50 -z-10" />
 
-          <div className="flex flex-col space-y-8">
-            <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 px-4 py-2 rounded-full w-fit">
-              <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
-              <span className="text-sm font-semibold text-blue-600 tracking-wider">Dijital Dönüşüm Partneriniz</span>
-            </div>
+      <section className='grid grid-cols-1 lg:grid-cols-2 p-6 md:p-16 md:py-32 gap-12 min-h-screen items-center max-w-7xl mx-auto relative pt-24 z-10'>
+        <div className="absolute top-[-10%] right-[-10%] w-125 h-125 bg-blue-100 rounded-full blur-[120px] opacity-50 -z-10" />
 
-            <h1 className="text-6xl md:text-8xl text-slate-900 ">
-              <Logo width={200} height={60} />
-            </h1>
+        <div className="flex flex-col space-y-8">
+          <div className="inline-flex items-center gap-2 bg-blue-50 border border-blue-100 px-4 py-2 rounded-full w-fit">
+            <div className="w-2 h-2 bg-blue-600 rounded-full animate-pulse" />
+            <span className="text-sm font-semibold text-blue-600 tracking-wider">Dijital Dönüşüm Partneriniz</span>
+          </div>
 
-            <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-xl">
-              Modern teknoloji ve yaratıcı stratejilerle işinizi dijital dünyada bir adım öne taşıyoruz. Markanızın potansiyelini keşfedin ve küresel pazarda yerinizi alın.
-            </p>
+          <h1 className="text-6xl md:text-8xl text-slate-900 ">
+            <Logo width={300} height={100} />
+          </h1>
 
-            <div className="flex flex-wrap items-center gap-4 pt-4">
+          <p className="text-slate-600 text-lg md:text-xl leading-relaxed max-w-xl">
+            Modern teknoloji ve yaratıcı stratejilerle işinizi dijital dünyada bir adım öne taşıyoruz. Markanızın potansiyelini keşfedin ve küresel pazarda yerinizi alın.
+          </p>
+
+          <div className="flex flex-wrap items-center gap-4 pt-4">
+            <Link href="/contact" >
               <button className="group flex items-center gap-3 bg-slate-900 text-white px-10 py-4 rounded-2xl font-bold text-lg hover:bg-blue-600 transition-all duration-500 shadow-xl shadow-blue-900/10">
                 Hemen Başlayalım
                 <MoveRight className="w-5 h-5 transition-transform duration-300 group-hover:translate-x-2" />
               </button>
-              <button className="px-10 py-4 rounded-2xl font-bold text-lg text-slate-700 hover:bg-slate-200/50 transition-all border border-slate-200">
-                Çalışmalarımız
-              </button>
-            </div>
-          </div>
-
-          <div className='relative flex items-center justify-center py-12'>
-            <div className="relative flex flex-col gap-6 w-full max-w-md">
-              <div className="group bg-white/90 backdrop-blur-md p-8 rounded-[2.5rem] border border-white shadow-xl shadow-slate-200/40 hover:-translate-y-2 transition-all duration-500">
-                <div className="w-14 h-14 flex justify-center items-center bg-slate-100 rounded-2xl mb-4 border border-slate-200">
-                  <Lightbulb className="w-7 h-7 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-800">Dijital Strateji</h3>
-                <p className="text-slate-500 text-sm mt-3 leading-relaxed">
-                  Markanızı analiz ederek hedef kitlenize en doğru kanallardan ulaşmanızı sağlayan veri odaklı dijital stratejiler geliştiriyoruz.
-                </p>
-              </div>
-
-              <div className="group bg-slate-900 p-8 rounded-[2.5rem] shadow-xl shadow-slate-900/20 md:ml-12 hover:-translate-y-2 transition-all duration-500">
-                <div className="w-14 h-14 flex justify-center items-center bg-white/10 rounded-2xl mb-4 border border-white/10" >
-                  <Code2 className="w-7 h-7 text-white" /></div>
-                <h3 className="text-xl font-bold text-white">Yazılım & Geliştirme</h3>
-                <p className="text-slate-400 text-sm mt-3 leading-relaxed">
-                  Modern teknolojilerle yüksek performanslı web ve mobil uygulamalar geliştiriyor, iş süreçlerinizi dijitale taşıyoruz.
-                </p>
-              </div>
-
-              <div className="group bg-white/90 backdrop-blur-md p-8 rounded-[2.5rem] border border-white shadow-xl shadow-slate-200/40 hover:-translate-y-2 transition-all duration-500">
-                <div className="w-14 h-14 flex justify-center items-center bg-slate-100 rounded-2xl mb-4 border border-slate-200">
-                  <Palette className="w-7 h-7 text-blue-600" />
-                </div>
-                <h3 className="text-xl font-bold text-slate-800">Marka & Tasarım</h3>
-                <p className="text-slate-500 text-sm mt-3 leading-relaxed">
-                  Markanızı öne çıkaran yaratıcı tasarımlar ile güçlü bir görsel kimlik oluşturuyor, kullanıcı deneyimini en üst seviyeye taşıyoruz.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </AnimateOnScroll>
-
-      <AnimateOnScroll>
-        <div className="w-full bg-white/80 backdrop-blur-sm py-24 border-y border-slate-100 z-10">
-          <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
-            {[
-              {
-                label: "Mutlu Müşteri",
-                value: "100+",
-                Icon: Users
-              },
-              {
-                label: "Tamamlanan Proje",
-                value: "100+",
-                Icon: Briefcase
-              },
-              {
-                label: "Başarı Oranı",
-                value: "%99",
-                Icon: Trophy
-              }
-            ].map((stat, i) => (
-              <div key={i} className="flex flex-col items-center space-y-4 group">
-                <div className="p-4 bg-blue-50 rounded-2xl group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-500 ">
-                  <stat.Icon className="w-8 h-8 text-blue-600 transition-colors duration-500 group-hover:text-white" />
-                </div>
-
-                <div className="space-y-1">
-                  <div className="text-5xl font-black text-slate-900 tracking-tighter ">
-                    {stat.value}
-                  </div>
-                  <div className="text-slate-500 font-bold text-xs  tracking-[0.2em]">
-                    {stat.label}
-                  </div>
-                </div>
-              </div>
-            ))}
+            </Link>
+           
           </div>
         </div>
-      </AnimateOnScroll>
+
+        <div className='relative flex items-center justify-center py-12'>
+          <div className="relative flex flex-col gap-6 w-full max-w-md">
+            <div className="group bg-white/90 backdrop-blur-md p-8 rounded-[2.5rem] border border-white shadow-xl shadow-slate-200/40 hover:-translate-y-2 transition-all duration-500">
+              <div className="w-14 h-14 flex justify-center items-center bg-slate-100 rounded-2xl mb-4 border border-slate-200">
+                <Lightbulb className="w-7 h-7 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800">Dijital Strateji</h3>
+              <p className="text-slate-500 text-sm mt-3 leading-relaxed">
+                Markanızı analiz ederek hedef kitlenize en doğru kanallardan ulaşmanızı sağlayan veri odaklı dijital stratejiler geliştiriyoruz.
+              </p>
+            </div>
+
+            <div className="group bg-slate-900 p-8 rounded-[2.5rem] shadow-xl shadow-slate-900/20 md:ml-12 hover:-translate-y-2 transition-all duration-500">
+              <div className="w-14 h-14 flex justify-center items-center bg-white/10 rounded-2xl mb-4 border border-white/10" >
+                <Code2 className="w-7 h-7 text-white" /></div>
+              <h3 className="text-xl font-bold text-white">Yazılım & Geliştirme</h3>
+              <p className="text-slate-400 text-sm mt-3 leading-relaxed">
+                Modern teknolojilerle yüksek performanslı web ve mobil uygulamalar geliştiriyor, iş süreçlerinizi dijitale taşıyoruz.
+              </p>
+            </div>
+
+            <div className="group bg-white/90 backdrop-blur-md p-8 rounded-[2.5rem] border border-white shadow-xl shadow-slate-200/40 hover:-translate-y-2 transition-all duration-500">
+              <div className="w-14 h-14 flex justify-center items-center bg-slate-100 rounded-2xl mb-4 border border-slate-200">
+                <Palette className="w-7 h-7 text-blue-600" />
+              </div>
+              <h3 className="text-xl font-bold text-slate-800">Marka & Tasarım</h3>
+              <p className="text-slate-500 text-sm mt-3 leading-relaxed">
+                Markanızı öne çıkaran yaratıcı tasarımlar ile güçlü bir görsel kimlik oluşturuyor, kullanıcı deneyimini en üst seviyeye taşıyoruz.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      {/* <div className="w-full bg-white/80 backdrop-blur-sm py-24 border-y border-slate-100 z-10">
+        <div className="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-3 gap-16 text-center">
+          {[
+            {
+              label: "Mutlu Müşteri",
+              value: "100+",
+              Icon: Users
+            },
+            {
+              label: "Tamamlanan Proje",
+              value: "100+",
+              Icon: Briefcase
+            },
+            {
+              label: "Başarı Oranı",
+              value: "%99",
+              Icon: Trophy
+            }
+          ].map((stat, i) => (
+            <div key={i} className="flex flex-col items-center space-y-4 group">
+              <div className="p-4 bg-blue-50 rounded-2xl group-hover:scale-110 group-hover:bg-blue-600 transition-all duration-500 ">
+                <stat.Icon className="w-8 h-8 text-blue-600 transition-colors duration-500 group-hover:text-white" />
+              </div>
+
+              <div className="space-y-1">
+                <div className="text-5xl font-black text-slate-900 tracking-tighter ">
+                  {stat.value}
+                </div>
+                <div className="text-slate-500 font-bold text-xs  tracking-[0.2em]">
+                  {stat.label}
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div> */}
+
 
       <div className='w-full bg-slate-900 relative z-10'>
         <div
           className="absolute inset-0 z-[-2] opacity-[0.15] pointer-events-none"
           style={{ backgroundImage: `radial-gradient(#ffffff 1px, transparent 1px)`, backgroundSize: '25px 25px' }}
         />
-        <AnimateOnScroll>
-          <div className='w-full px-6 md:px-16 py-64 overflow-hidden'>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-[100px]" />
-            <div className="max-w-7xl mx-auto space-y-24">
-              <div className='grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-slate-800 pb-20'>
-                <div className='group'>
-                  <h2 className="text-2xl font-bold mb-5 text-white border-l-4 border-blue-600 pl-6">
-                    Vizyonumuz
-                  </h2>
-                  <p className='text-slate-400 text-sm leading-7 pl-7'>
-                    Geleceğin dijital dünyasında markaların sürdürülebilir başarı elde etmesini sağlayan yenilikçi çözümler üreten lider bir ajans olmak.
-                  </p>
-                </div>
-                <div className='group'>
-                  <h2 className="text-2xl font-bold mb-5 text-white border-l-4 border-blue-600 pl-6">
-                    Neler Yapıyoruz?
-                  </h2>
-                  <p className='text-slate-400 text-sm leading-7 pl-7'>
-                    Markaların dijitalde büyümesini sağlayan uçtan uca çözümler sunuyoruz. Yazılım geliştirme, performans pazarlama ve kreatif tasarım süreçlerini tek çatı altında topluyoruz.
-                  </p>
-                </div>
-                <div className='group'>
-                  <h2 className="text-2xl font-bold mb-5 text-white border-l-4 border-blue-600 pl-6">
-                    Misyonumuz
-                  </h2>
-                  <p className='text-slate-400 text-sm leading-7 pl-7'>
-                    Müşterilerimizin hedeflerine ulaşmasını sağlayan, ölçülebilir ve etkili dijital çözümler sunarak uzun vadeli iş ortaklıkları kurmak.
-                  </p>
-                </div>
 
+        <div className='w-full px-6 md:px-16 py-64 overflow-hidden'>
+          <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-600/5 rounded-full blur-[100px]" />
+          <div className="max-w-7xl mx-auto space-y-24">
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-slate-800 pb-20'>
+              <div className='group'>
+                <h2 className="text-2xl font-bold mb-5 text-white border-l-4 border-blue-600 pl-6">
+                  Vizyonumuz
+                </h2>
+                <p className='text-slate-400 text-sm leading-7 pl-7'>
+                  Geleceğin dijital dünyasında markaların sürdürülebilir başarı elde etmesini sağlayan yenilikçi çözümler üreten lider bir ajans olmak.
+                </p>
+              </div>
+              <div className='group'>
+                <h2 className="text-2xl font-bold mb-5 text-white border-l-4 border-blue-600 pl-6">
+                  Neler Yapıyoruz?
+                </h2>
+                <p className='text-slate-400 text-sm leading-7 pl-7'>
+                  Markaların dijitalde büyümesini sağlayan uçtan uca çözümler sunuyoruz. Yazılım geliştirme, performans pazarlama ve kreatif tasarım süreçlerini tek çatı altında topluyoruz.
+                </p>
+              </div>
+              <div className='group'>
+                <h2 className="text-2xl font-bold mb-5 text-white border-l-4 border-blue-600 pl-6">
+                  Misyonumuz
+                </h2>
+                <p className='text-slate-400 text-sm leading-7 pl-7'>
+                  Müşterilerimizin hedeflerine ulaşmasını sağlayan, ölçülebilir ve etkili dijital çözümler sunarak uzun vadeli iş ortaklıkları kurmak.
+                </p>
               </div>
 
-              <div className="space-y-16 text-center">
-                <div className="space-y-4">
-                  <h2 className="text-4xl md:text-5xl font-black text-white">Hizmetlerimiz</h2>
-                  <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full" />
+            </div>
+
+            <div className="space-y-16 text-center">
+              <div className="space-y-4">
+                <h2 className="text-4xl md:text-5xl font-black text-white">Hizmetlerimiz</h2>
+                <div className="w-20 h-1.5 bg-blue-600 mx-auto rounded-full" />
+              </div>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div className="bg-slate-800/30 border border-slate-800 p-10 rounded-4xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 text-left">
+                  <div className="w-12 h-12 bg-slate-700/50 rounded-xl mb-6 flex items-center justify-center group-hover:bg-blue-600/20 transition-all duration-300">
+                    <Globe className="w-6 h-6 text-blue-500 group-hover:scale-110 transition" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-4">Web Geliştirme</h3>
+                  <ul className="space-y-3">
+                    {["Kurumsal Web Siteleri", "E-Ticaret Sistemleri", "Özel Yazılım Çözümleri"].map((li, idx) => (
+                      <li key={idx} className="text-slate-400 text-xs flex items-center gap-3">
+                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                        {li}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
 
-                  <div className="bg-slate-800/30 border border-slate-800 p-10 rounded-4xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 text-left">
-                    <div className="w-12 h-12 bg-slate-700/50 rounded-xl mb-6 flex items-center justify-center group-hover:bg-blue-600/20 transition-all duration-300">
-                      <Globe className="w-6 h-6 text-blue-500 group-hover:scale-110 transition" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-4">Web Geliştirme</h3>
-                    <ul className="space-y-3">
-                      {["Kurumsal Web Siteleri", "E-Ticaret Sistemleri", "Özel Yazılım Çözümleri"].map((li, idx) => (
-                        <li key={idx} className="text-slate-400 text-xs flex items-center gap-3">
-                          <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
-                          {li}
-                        </li>
-                      ))}
-                    </ul>
+                <div className="bg-slate-800/30 border border-slate-800 p-10 rounded-4xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 text-left">
+                  <div className="w-12 h-12 bg-slate-700/50 rounded-xl mb-6 flex items-center justify-center group-hover:bg-blue-600/20 transition-all duration-300">
+                    <BarChart3 className="w-6 h-6 text-blue-500 group-hover:scale-110 transition" />
                   </div>
-
-                  <div className="bg-slate-800/30 border border-slate-800 p-10 rounded-4xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 text-left">
-                    <div className="w-12 h-12 bg-slate-700/50 rounded-xl mb-6 flex items-center justify-center group-hover:bg-blue-600/20 transition-all duration-300">
-                      <BarChart3 className="w-6 h-6 text-blue-500 group-hover:scale-110 transition" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-4">Dijital Pazarlama</h3>
-                    <ul className="space-y-3">
-                      {["SEO Optimizasyonu", "Google & Meta Reklamları", "Performans Analizi"].map((li, idx) => (
-                        <li key={idx} className="text-slate-400 text-xs flex items-center gap-3">
-                          <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
-                          {li}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="bg-slate-800/30 border border-slate-800 p-10 rounded-4xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 text-left">
-                    <div className="w-12 h-12 bg-slate-700/50 rounded-xl mb-6 flex items-center justify-center group-hover:bg-blue-600/20 transition-all duration-300">
-                      <PencilRuler className="w-6 h-6 text-blue-500 group-hover:scale-110 transition" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-4">UI/UX Tasarım</h3>
-                    <ul className="space-y-3">
-                      {["Kullanıcı Deneyimi", "Arayüz Tasarımı", "Prototipleme"].map((li, idx) => (
-                        <li key={idx} className="text-slate-400 text-xs flex items-center gap-3">
-                          <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
-                          {li}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
-                  <div className="bg-slate-800/30 border border-slate-800 p-10 rounded-4xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 text-left">
-                    <div className="w-12 h-12 bg-slate-700/50 rounded-xl mb-6 flex items-center justify-center group-hover:bg-blue-600/20 transition-all duration-300">
-                      <Megaphone className="w-6 h-6 text-blue-500 group-hover:scale-110 transition" />
-                    </div>
-                    <h3 className="text-xl font-bold text-white mb-4">Marka Yönetimi</h3>
-                    <ul className="space-y-3">
-                      {["Kurumsal Kimlik", "Sosyal Medya Yönetimi", "İçerik Üretimi"].map((li, idx) => (
-                        <li key={idx} className="text-slate-400 text-xs flex items-center gap-3">
-                          <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
-                          {li}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-
+                  <h3 className="text-xl font-bold text-white mb-4">Dijital Pazarlama</h3>
+                  <ul className="space-y-3">
+                    {["SEO Optimizasyonu", "Google & Meta Reklamları", "Performans Analizi"].map((li, idx) => (
+                      <li key={idx} className="text-slate-400 text-xs flex items-center gap-3">
+                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                        {li}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
+
+                <div className="bg-slate-800/30 border border-slate-800 p-10 rounded-4xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 text-left">
+                  <div className="w-12 h-12 bg-slate-700/50 rounded-xl mb-6 flex items-center justify-center group-hover:bg-blue-600/20 transition-all duration-300">
+                    <PencilRuler className="w-6 h-6 text-blue-500 group-hover:scale-110 transition" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-4">UI/UX Tasarım</h3>
+                  <ul className="space-y-3">
+                    {["Kullanıcı Deneyimi", "Arayüz Tasarımı", "Prototipleme"].map((li, idx) => (
+                      <li key={idx} className="text-slate-400 text-xs flex items-center gap-3">
+                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                        {li}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="bg-slate-800/30 border border-slate-800 p-10 rounded-4xl hover:border-blue-500/50 hover:bg-slate-900 transition-all duration-300 text-left">
+                  <div className="w-12 h-12 bg-slate-700/50 rounded-xl mb-6 flex items-center justify-center group-hover:bg-blue-600/20 transition-all duration-300">
+                    <Megaphone className="w-6 h-6 text-blue-500 group-hover:scale-110 transition" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-4">Marka Yönetimi</h3>
+                  <ul className="space-y-3">
+                    {["Kurumsal Kimlik", "Sosyal Medya Yönetimi", "İçerik Üretimi"].map((li, idx) => (
+                      <li key={idx} className="text-slate-400 text-xs flex items-center gap-3">
+                        <div className="w-1.5 h-1.5 bg-blue-600 rounded-full" />
+                        {li}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
               </div>
             </div>
           </div>
-        </AnimateOnScroll>
+        </div>
+
       </div>
 
-      <AnimateOnScroll>
-        <FeaturesSection />
-      </AnimateOnScroll>
 
-      <AnimateOnScroll>
-        <div className="w-full px-6 md:px-16 pb-24 z-10">
-          <div className="max-w-7xl mx-auto bg-blue-600 rounded-[3.5rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl shadow-blue-500/40">
-            <div
-              className="absolute inset-0 z-0 opacity-[0.15] pointer-events-none"
-              style={{ backgroundImage: `radial-gradient(#ffffff 1px, transparent 2px)`, backgroundSize: '25px 25px' }}
-            />
-            <h2 className="text-4xl md:text-6xl font-black text-white mb-10 relative z-20 tracking-tighter">Dijitaldeki başarınızı şansa bırakmayın.</h2>
-            <button className="group bg-white text-blue-600 px-14 py-6 rounded-2xl font-black text-xl hover:bg-slate-900 hover:text-white transition-all relative z-20 flex items-center gap-3 mx-auto">
-              Hadi Konuşalım
-              <MoveRight className="w-6 h-6 max-sm:hidden group-hover:translate-x-2 transition-transform" />
-            </button>
-          </div>
+      <FeaturesSection />
+
+
+
+      <div className="w-full px-6 md:px-16 pb-24 z-10">
+        <div className="max-w-7xl mx-auto bg-blue-600 rounded-[3.5rem] p-12 md:p-24 text-center relative overflow-hidden shadow-2xl shadow-blue-500/40">
+          <div
+            className="absolute inset-0 z-0 opacity-[0.15] pointer-events-none"
+            style={{ backgroundImage: `radial-gradient(#ffffff 1px, transparent 2px)`, backgroundSize: '25px 25px' }}
+          />
+          <h2 className="text-4xl md:text-6xl font-black text-white mb-10 relative z-20 tracking-tighter">Dijitaldeki başarınızı şansa bırakmayın.</h2>
+          <button className="group bg-white text-blue-600 px-14 py-6 rounded-2xl font-black text-xl hover:bg-slate-900 hover:text-white transition-all relative z-20 flex items-center gap-3 mx-auto">
+            Hadi Konuşalım
+            <MoveRight className="w-6 h-6 max-sm:hidden group-hover:translate-x-2 transition-transform" />
+          </button>
         </div>
-      </AnimateOnScroll>
+      </div>
+
 
 
 
